@@ -105,11 +105,12 @@ nav div a:hover {
 
   .nav-container a {
     flex-direction: row;
-    font-size: small;
+    font-size: 7px;
     justify-content: space-between;
     align-items: center;
     justify-items: center;
-    padding: 0px 15px;
+    padding: 5px 15px;
+
   }
 
   .logo-container {
@@ -135,7 +136,7 @@ main {
 .section-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 83vh);
+  grid-template-rows: repeat(1, 84vh);
   width: 100%;
   height: 100%;
 }
@@ -210,19 +211,42 @@ main {
 /*******************RESPONSIVE MAIN****************************/
 
 @media (min-width: 320px) and (max-width: 768px){
+
+  .body-index {
+    overflow: scroll;
+  }
+
   .section-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto; 
+    grid-template-rows: repeat(2, 50% 50%); 
+    justify-content: center;
+    align-items: center;
   }
   
 
   .buttons-col {
+    margin-top: 15px;
     grid-row: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
   
   .img-col {
     grid-row: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
+
+  .image-col img {
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
 }
 
 /*-------------------FOOTER-------------------------*/
@@ -239,11 +263,8 @@ footer {
   z-index: 15;
   background-image: url("../img/web-bkgnd.png");
   background-size: cover;
-  /* Hace que la imagen cubra todo el contenedor */
   background-repeat: no-repeat;
-  /* Evita que la imagen se repita */
   background-position: center;
-  /* Centra la imagen en el contenedor */
   border-top: 3px solid rgb(30, 30, 30);
 }
 
@@ -257,7 +278,7 @@ ul li a {
   padding: 5px;
 }
 
-footer .redes ul {
+footer ul {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
@@ -267,6 +288,32 @@ footer .redes ul {
   justify-content: center;
   align-items: center;
 }
+
+/*-------------------FOOTER RESPONSIVE-------------------------*/
+
+@media (min-width: 320px) and (max-width: 768px){
+
+  footer{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redes{
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer ul{
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+}
+  
+
 
 /*-------------------MENU-------------------------*/
 
