@@ -26,7 +26,7 @@ body {
 
 /*-------------------HEADER-------------------------*/
 
-.header-container {
+header{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,18 +46,22 @@ body {
   margin-left: 45px;
 }
 
-nav div a {
+.navlink {
   text-decoration: none;
   color: white;
   padding: 10px;
 }
 
-nav div a:hover {
+.navlink:hover {
   color: rgb(200, 159, 70);
 }
 
 .logo-img {
   width: 45px;
+}
+
+.logo-txt{
+  font-size: large;
 }
 
 .nav-container {
@@ -83,11 +87,12 @@ nav div a:hover {
 /*******************RESPONSIVE HEADER****************************/
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .header-container {
-    display: list-item;
+  header{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 120px;
+    justify-content: center;
+    height: 110px;
     z-index: 3;
     border-bottom: 3px solid rgb(30, 30, 30);
     background-image: url("../img/web-bkgnd.png");
@@ -98,28 +103,43 @@ nav div a:hover {
 
   .nav-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-  }
-
-  .nav-container a {
-    flex-direction: row;
-    font-size: 7px;
     justify-content: space-between;
     align-items: center;
-    justify-items: center;
-    padding: 5px 15px;
+    padding: 0;
+    margin: 0;
+  }
 
+  .navlink{
+    font-size: .7rem;
+    padding: 5px;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 15px;
-    margin: 5px auto;
+    margin: 0;
+    padding: 0;
+    margin: 5px 0px;
   }
+
+   .logo-container a {
+    margin: 0px;
+    padding: 3px;
+  }
+
+  .logo-container img {
+    width: 35px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-txt{
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
 /*-------------------MAIN-------------------------*/
@@ -218,7 +238,7 @@ main {
 
   .section-container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 50% 50%); 
+    grid-template-rows: repeat(2, 1fr); 
     justify-content: center;
     align-items: center;
   }
@@ -233,6 +253,7 @@ main {
     align-items: center;
   }
   
+
   .img-col {
     grid-row: 2;
     width: 100%;
@@ -241,9 +262,10 @@ main {
   }
 
   .image-col img {
-    height: 50%;
     width: 100%;
+    height: auto;
     padding: 0;
+    padding-left: 50px;
     margin: 0;
   }
 
