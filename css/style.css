@@ -1,3 +1,6 @@
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -461,6 +464,8 @@ footer ul {
 }
 
 .nosotros-title{
+  align-items: center;
+  justify-content: center;
   color: #917a15;
   font-size: 40px;
   text-transform: uppercase;
@@ -516,8 +521,88 @@ footer ul {
   }
 
   .sobre_nosotros-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 25px;
     margin-bottom: 25px;
   }
 
+  .nosotros-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+}
+
+/*************CONTACTO*****************/
+
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  height: 100%;
+}
+  
+.experience-container {
+  grid-row: span 3 / span 3;
+  height: 100%;
+  width: 100%;
+}
+
+.tripadvisor-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-container iframe{
+  width: 600px;
+  height: 400px;
+}
+
+.info-container {
+  grid-row: span 3 / span 3;
+  height: 100%;
+  width: 100%;
+}
+
+.location-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmap_iframe{
+  width: 600px;
+  height: 400px;
+}
+
+.chain-form {
+  grid-column: span 2 / span 2;
+  grid-row-start: 4;
+  height: 100%;
+}
+
+.contact-form {
+  grid-column: span 2 / span 2;
+  grid-row-start: 5;
+  height: 100%;
+}
+
+.contact h3{
+  color: white;
+}
+
+.chain-form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
