@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Valentino Millimaci</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on **Compania de Pizzas**
+- 🔭 I’m currently working on **Compania de Pizzas WebPage**
 
 - 📫 How to reach me **vmillimaci@gmail.com**
 
