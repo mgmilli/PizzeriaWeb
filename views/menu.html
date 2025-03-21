@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css">  <!-- Old styles -->
+    <link rel="stylesheet" href="../css/menu.css">    <!-- New styles -->
     <title>Document</title>
   </head>
 
@@ -25,6 +26,7 @@
 
         <div class="nav-container">
           <a href="../index.html" class="navlink">INICIO</a>
+          <a href="menu.html"     class="navlink">MENU</a>
           <a href="pediAca.html"  class="navlink">PEDI ACA</a>
           <a href="nosotros.html" class="navlink">NOSOTROS</a>
           <a href="contact.html"  class="navlink">CONTACTO</a>
@@ -42,19 +44,6 @@
               />
             </svg>
           </a>
-          <a href="carrito.html"  class="navlink"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-cart-dash-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1"/></svg>
-          </a>
-
         </div>
 
       </nav>
@@ -64,22 +53,81 @@
    
 
     <main class="main-menu">
-      <div class="card">
-        <div class="card-image" style="background-image: url('img/product1.jpg');"></div>
-        <div class="card-info">
-          <span class="name">Pizza Margherita</span>
-          <span class="price">$12.99</span>
+ 
+      <section class="menu">
+        <div class="card">
+            <div class="card-image" style="background-image: url(../img/anana.png);"></div>
+            <div class="card-info">
+                <span class="name">Anana</span>
+                <span class="price">$17.000</span>
+            </div>
         </div>
-      </div>
-      
-      <div class="card">
-        <div class="card-image" style="background-image: url('img/product2.jpg');"></div>
-        <div class="card-info">
-          <span class="name">Pepperoni Pizza</span>
-          <span class="price">$14.99</span>
+    
+        <div class="card pepperoni">
+            <div class="card-image" style="background-image: url(../img/pepperoni.png);"></div>
+            <div class="card-info">
+                <span class="name">Pepperoni</span>
+                <span class="price">$17.000</span>
+            </div>
         </div>
+    
+        <div class="card m-cherry">
+            <div class="card-image" style="background-image: url(../img/m-cherry.png);"></div>
+            <div class="card-info">
+                <span class="name">Margarita Cherry</span>
+                <span class="price">$17.000</span>
+            </div>
+        </div>
+        <div class="card anchoas">
+          <div class="card-image" style="background-image: url(../img/anchoas.png);"></div>
+          <div class="card-info">
+              <span class="name">Anchoas</span>
+              <span class="price">$17.000</span>
+          </div>
       </div>
-      
+  
+      <div class="card napolitana">
+          <div class="card-image" style="background-image: url(../img/napolitana.png);"></div>
+          <div class="card-info">
+              <span class="name">Napolitana</span>
+              <span class="price">$17.000</span>
+          </div>
+      </div>
+  
+      <div class="card cuatro-quesos">
+          <div class="card-image" style="background-image: url(../img/cuatro-quesos.png);"></div>
+          <div class="card-info">
+              <span class="name">Cuatro Quesos</span>
+              <span class="price">$17.000</span>
+          </div>
+      </div>
+      <div class="card fugazzeta">
+        <div class="card-image" style="background-image: url(../img/fugazzeta.png);"></div>
+        <div class="card-info">
+            <span class="name">Fugazzeta</span>
+            <span class="price">$17.000</span>
+        </div>
+    </div>
+
+    <div class="card capresse">
+        <div class="card-image" style="background-image: url(../img/pizza-caprese.png);"></div>
+        <div class="card-info">
+            <span class="name">Capresse</span>
+            <span class="price">$17.000</span>
+        </div>
+    </div>
+
+    <div class="card bacon">
+        <div class="card-image" style="background-image: url(../img/bacon.png);"></div>
+        <div class="card-info">
+            <span class="name">Bacon</span>
+            <span class="price">$17.000</span>
+        </div>
+    </div>
+    </section>
+    
+
+
        <!--DISPLAY DE PRODUCTOS
       <div class="card-container">
         <div class="card">
