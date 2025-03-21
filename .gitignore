@@ -1,0 +1,16 @@
+# node modules
+node_modules/
+
+# sistemas de build como dist/ o build/
+dist/
+build/
+
+# logs
+*.log
+
+# entorno (si usas dotenv)
+.env
+
+# cachés y temporales
+.cache/
+.tmp/
