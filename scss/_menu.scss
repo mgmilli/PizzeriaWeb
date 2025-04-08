@@ -1,17 +1,24 @@
 $card-bg: rgba(0, 0, 0, 0.878); 
 $text-color: white; 
-$gold-color:#917a15;
+$gold-color: #917a15;
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: $text-color;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   justify-items: center;
   padding: 20px;
 
-
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -20,25 +27,28 @@ $gold-color:#917a15;
   height: 450px;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fdfdfdd5;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
   background: linear-gradient(135deg, rgba(47, 47, 47, 0.337) 50%, rgba(255, 255, 255, 0.792) 50%);
+  box-shadow: 0 10px 20px black;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
 
+  &:hover {
+    transform: scale(1.05);
+  }
 
   .card-image {
+    align-items: center;
     width: 100%;
-    height: 85%; 
-    background-size: 140%;
-    background-position: 35%;
+    height: 85%;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .card-info {
-    height: 15%; 
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,113 +60,51 @@ $gold-color:#917a15;
   }
 }
 
-/*AJUSTES PARA CADA ITEM*/
+.card-image.anana              { background-image: url(../img/anana.png); }
+.card-image.pepperoni-img     { background-image: url(../img/pepperoni.png); }
+.card-image.m-cherry-img      { background-image: url(../img/m-cherry.png); }
+.card-image.anchoas-img       { background-image: url(../img/anchoas.png); }
+.card-image.napolitana-img    { background-image: url(../img/napolitana.png); }
+.card-image.cuatro-quesos-img { background-image: url(../img/cuatro-quesos.png); }
+.card-image.fugazzeta-img     { background-image: url(../img/fugazzeta.png); }
+.card-image.capresse-img      { background-image: url(../img/pizza-caprese.png); }
+.card-image.bacon-img         { background-image: url(../img/bacon.png); }
 
-.pepperoni .card-image{
-    width: 100%;
-    height: 85%; 
-    background-size: 140%;
-    background-position: 50%;
-    background-repeat: no-repeat;
+
+.card-image.anana{
+  background-size: 150%;
+  background-position: 37% center;
 }
-
-.m-cherry .card-image{
-    width: 100%;
-    height: 85%; 
-    background-size: 140%;
-    background-position: 45%;
-    background-repeat: no-repeat;
+.card-image.pepperoni-img{
+  background-size: 150%;
+  background-position: 53% center;
 }
-
-.anchoas .card-image{
-  width: 100%;
-  height: 85%; 
-  background-size: 140%;
-  background-position: 40%;
-  background-repeat: no-repeat;
+.card-image.m-cherry-img{
+  background-size: 148%;
+  background-position: 51% center;
 }
-
-.napolitana .card-image{
-  width: 100%;
-  height: 85%; 
-  background-size: 140%;
-  background-position: 43%;
-  background-repeat: no-repeat;
+.card-image.anchoas-img{
+  background-size: 150%;
+  background-position: 42% center;
 }
-
-.cuatro-quesos .card-image{
-  width: 100%;
-  height: 85%; 
-  background-size: 140%;
-  background-position: 53%;
-  background-repeat: no-repeat;
+.card-image.napolitana-img{
+  background-size: 150%;
+  background-position: 45% center;
 }
-
-.fugazzeta .card-image{
-  width: 100%;
-  height: 85%; 
-  background-size: 140%;
-  background-position: 45%;
-  background-repeat: no-repeat;
+.card-image.cuatro-quesos-img{
+  background-size: 150%;
+  background-position: 55% center;
 }
-
-.capresse .card-image{
-  width: 100%;
-  height: 85%; 
+.card-image.fugazzeta-img{
+  background-size: 145%;
+  background-position: 49% center;
+}
+.card-image.capresse-img{
   background-size: 160%;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background-position: 51% center;
+}
+.card-image.bacon-img{
+  background-size: 162%;
+  background-position: 49% center;
 }
 
-.bacon .card-image{
-  width: 100%;
-  height: 85%; 
-  background-size: 160%;
-  background-position: 46%;
-  background-repeat: no-repeat;
-}
-
-.card-image {
-  width: 100%;
-  height: 200px; /* ajustá según necesidad */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-
-/* Agregá estas clases específicas */
-.card-image.anana {
-  background-image: url(../img/anana.png);
-}
-
-.card-image.pepperoni-img {
-  background-image: url(../img/pepperoni.png);
-}
-
-.card-image.m-cherry-img {
-  background-image: url(../img/m-cherry.png);
-}
-
-.card-image.anchoas-img {
-  background-image: url(../img/anchoas.png);
-}
-
-.card-image.napolitana-img {
-  background-image: url(../img/napolitana.png);
-}
-
-.card-image.cuatro-quesos-img {
-  background-image: url(../img/cuatro-quesos.png);
-}
-
-.card-image.fugazzeta-img {
-  background-image: url(../img/fugazzeta.png);
-}
-
-.card-image.capresse-img {
-  background-image: url(../img/pizza-caprese.png);
-}
-
-.card-image.bacon-img {
-  background-image: url(../img/bacon.png);
-}
